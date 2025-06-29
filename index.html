@@ -324,6 +324,27 @@
             cursor: pointer;
         }
 
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: transparent !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #2d2d2d;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        /* Hover effect for scrollbar thumb */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #1a1a1a;
+        }
+
         @media (min-width: 1920px) {
 
             header {
@@ -380,6 +401,7 @@
                 margin-bottom: 1.5rem;
                 font-weight: 400;
             }
+
             #s1 p {
                 font-size: 1rem;
                 font-weight: 400;
@@ -389,11 +411,6 @@
             #s2 img {
                 width: 140px;
             }
-
-
-
-
-
 
 
             .content {
@@ -407,8 +424,9 @@
             #s3 .card {
                 padding-bottom: 5rem;
             }
-            #s5 form{
-        max-width: 40.1875rem;
+
+            #s5 form {
+                max-width: 40.1875rem;
             }
 
             footer .link-list {
